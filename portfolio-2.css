@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* body{
+    background-image: url(shades-grey-oily-waves-background.jpg);
+} */
+.container{
+    display: grid;
+    grid-template-areas: "header "
+                         "article "
+                         "main"
+                         "footer";
+    grid-template-rows: auto auto auto auto ;
+}
+.header{
+    grid-area: header;
+    display:flex;
+    justify-content: space-around;
+    column-gap: 100px;
+    background-color:white;
+    padding: 30px;
+    box-shadow: 2px 2px 2px;
+    row-gap: 30px;
+    position: sticky;
+    top:0%
+}
+ul li{
+    list-style: none;
+
+}
+.nav{
+    display:flex;
+    column-gap: 50px;
+}
+a{
+    color:black;
+    text-decoration: none;
+} ul img{
+    border-radius: 30px;
+}
+.article{
+    grid-area: article;
+    padding:30px;
+    margin:50px;
+    text-align: center;
+    /* border: 1px solid black; */
+
+}
+.title{
+    font-size: 70px;
+    font-weight: 400;
+}
+h4{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(47, 47, 47);
+}
+.main{
+    grid-area: main;
+    display:flex;
+/*     width:90vw; */
+    margin: auto ;
+    /* text-align: center; */
+    padding: 30px;
+
+    
+}
+.image{
+    margin:20px;
+}
+.content{
+    /* margin:50px 20px 10px 20px; */
+    /* text-align: center; */
+    margin:10px;
+    display: grid;
+    grid-template-areas: "top top"
+                         "right left"
+                         "botr  botl"   ;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+.c1{
+    font-size: large;
+    
+   
+
+}
+.top{display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    grid-area: top;
+
+}
+.right{
+    grid-area: right;
+    /* font-size: 14px; */
+}
+.left{
+    grid-area: left;
+    /* font-size:14px ; */
+}
+.footer{
+    grid-area: footer;
+    border:2px solid  rgb(139, 141, 141);
+    background-color: rgb(139,141,141);
+    padding:40px;
+    display: flex;
+     justify-content: space-around;
+     
+}
+a:hover{
+    color:rgb(94, 92, 92);
+}
+/* .botr{
+    font-size: 14px;
+}
+.botl{
+    font-size:14px;
+} */
+main img{
+    border-radius: 70px;
+}

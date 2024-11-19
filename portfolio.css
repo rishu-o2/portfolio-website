@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* body{
+    background-image:url(shades-grey-oily-waves-background.jpg) ;
+} */
+.container{
+    display: grid;
+    grid-template-areas: "header "
+                         "article "
+                         "main"
+                        "footer";
+    grid-template-rows: auto auto auto auto ;
+ 
+}
+.header{
+    grid-area: header;
+    display:flex;
+    justify-content: space-around;
+    column-gap: 100px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 2px 2px 2px;
+    row-gap: 30px;
+    position: sticky;
+    top: 0%;
+}
+ul li{
+    list-style: none;
+
+}
+.nav{
+    display:flex;
+    column-gap: 50px;
+}
+a{
+    color:black;
+    text-decoration: none;
+} ul img{
+    border-radius: 30px;
+}
+
+.article{
+    grid-area: article;
+    padding-top:5px;
+    /* box-shadow: 2px 3px 2px; */
+/*     width:100vw; */
+    text-align:center
+}
+article div img{
+    width:1530px;
+}
+.intro{
+    grid-area:article;
+    color:white;
+    text-align: center;
+    
+}
+ div p:nth-child(1){
+    font-size:50px ;
+    font-weight: 600;
+    margin:100px 400px 100px 400px ;
+}
+ div p:nth-child(2){
+    font-size:20px;
+    margin:100px 450px 100px 450px; 
+
+}
+
+.main{
+    grid-area: main;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+/*     width: 90vw; */
+    margin: auto;
+    text-align: center;
+    /* border:2px solid black; */
+}
+div h4:nth-child(1){
+    font-size: 80px;
+    font-weight: 400;
+    margin:50px;
+}
+div h4:nth-child(2){
+    font-size: 30px;
+    color: rgb(55, 55, 55);
+    font-weight: 400;
+}
+div h4:nth-child(3){
+    margin-top: 100px;
+    color:rgb(57, 56, 56);
+}
+.footer{
+    grid-area: footer;
+    border:2px solid  rgb(139, 141, 141);
+    background-color: rgb(139,141,141);
+    padding:40px;
+    display: flex;
+     justify-content: space-around;
+     
+}
+a:hover{
+    color:rgb(94, 92, 92);
+}
+main img{
+    border-radius: 60px;
+}

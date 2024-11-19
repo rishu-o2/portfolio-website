@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-areas: "header  header"
+                         "article image"
+                         "main    image"
+                         "footer  footer";
+    grid-template-rows: auto auto auto auto ;
+ 
+}
+.header{
+    grid-area: header;
+    display:flex;
+    justify-content: space-around;
+    column-gap: 100px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 2px 2px 2px;
+    row-gap: 30px;
+    position: sticky;
+    top: 0%;
+    
+}
+ul li{
+    list-style: none;
+
+}
+.nav{
+    display:flex;
+    column-gap: 50px;
+}
+a{
+    color:black;
+    text-decoration: none;
+} ul img{
+    border-radius: 30px;
+}
+.image{
+    grid-area: image;
+}
+
+.article{
+    grid-area:article;
+    text-align: center;
+    margin:30px;
+    margin-top: 50px;
+
+}
+h1{
+  font-size:70px;
+  font-weight: 800;
+}
+p{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(72, 70, 70);
+    
+}
+.main{
+    grid-area: main;
+    margin:20px;
+    padding:10px;
+    display:grid;
+    grid-template-areas: "box1 box2"
+                         "box3 box4"
+                         "box5 box5";
+    /* column-gap: 10px; */
+    row-gap:50px;
+}
+.box1{
+    grid-area: box1;
+}  
+.box2{
+    grid-area: box2;
+    
+}
+.box3{
+    grid-area: box3;
+    
+}
+.box4{
+    grid-area: box4;
+    
+}
+.box5{
+    grid-area: box5;
+    margin-top:50px;
+    /* margin-bottom: 50px; */
+    row-gap: 20px;
+    
+}
+div>a{
+    display:flex;
+}
+a h2{
+    margin-top: 65px;
+    font-weight: 550;
+    /* margin-left: 20px; */
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(20, 102, 122);
+    
+}
+.footer{
+    grid-area: footer;
+    border:2px solid  rgb(139, 141, 141);
+    background-color: rgb(139,141,141);
+    padding:40px;
+    display: flex;
+     justify-content: space-around;
+     
+}
+a:hover{
+    color:rgb(94, 92, 92);
+
+}
+main a:hover{
+    border:2px solid white;
+    border-radius: 40px;
+    background-color: rgb(235, 239, 242);
+    height:160px;
+    width:300px;
+}
+main img{
+    border-radius: 40px;
+}
